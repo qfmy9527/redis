@@ -1,0 +1,22 @@
+spring:
+ redis:
+    database: 0
+
+           # redis 数据源索引
+    host: localhost    # redis 服务器地址
+    port: 6379
+    pool:
+      max-active: 8   # redis 连接池最大连接数
+      max-wait: -1    # redis 连接池最大阻塞时间，负数表示没有限制等待时间
+      max-idle: 8     # redis 连接池中最大空闲连接
+      min-idle: 0     # redis 连接池中最小连接时间
+    password: 123
+    timeout: 0     # redis 中的最大等待时间
+ session:
+   store-type: none
+
+
+
+
+
+
